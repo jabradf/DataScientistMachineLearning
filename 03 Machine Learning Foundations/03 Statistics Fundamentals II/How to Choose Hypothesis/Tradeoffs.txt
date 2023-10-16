@@ -1,0 +1,43 @@
+Trade Offs
+At this point, let’s return to the point of view of a product manager who is actually planning this A/B test. Suppose that the product manager wants to be able to accurately detect a lift of 30% (or higher), but also wants to avoid false positives (they don’t want to change the email subjects unless there’s actually a difference between them). To plan their test, the product manager needs to consider the following:
+
+Increasing the sample size increases the power of the test (the probability of detecting a difference if there is one); however, larger sample sizes require more time and resources.
+Increasing the significance threshold also increases the power of the test; however, it simultaneously increases the false positive rate (the probability of detecting a difference when there isn’t one).
+Finally, if the project manager chooses a larger minimum detectable effect/lift, then they’ll be able to decrease the sample size without decreasing power. However, if they set up their test to detect a minimum lift of 30% (for example), they may not be able to detect smaller differences that are still meaningful.
+
+Instructions
+1.
+The simulation code from the previous exercises is provided for you in script.py. Currently, the simulation is set up to use an open rate of 50% for the control email, and a lift of 30% for the name email subject. Set the sample size of 100 and press “Run” and make note of the proportion of significant results (which is the power of the test).
+
+Checkpoint 2 Passed
+
+Stuck? Get a hint
+2.
+Now increase the sample size to 500 and press “Run” again. Note that the power of the test also increases.
+
+Checkpoint 3 Passed
+
+Stuck? Get a hint
+3.
+Next, increase the significance threshold to 0.10. Note that the power of the test increases even more.
+
+Checkpoint 4 Passed
+
+Stuck? Get a hint
+4.
+Finally, increase the lift to 40%. Note that again, the power of the test increases.
+
+
+--------------------
+
+Congratulations! You’ve now learned how to use simulation to investigate the trade-offs for an A/B test sample-size calculation. As a recap, this lesson covered the following:
+
+The significance threshold for a test is equal to the false positive rate
+The power of a test is the probability of correctly detecting a significant result
+Increasing sample size increases the power of a test
+Increasing the significance threshold increases power, but also increases the false positive rate
+Larger sample sizes are needed to detect smaller effect sizes
+Two notes about the terminology in the sample size calculator:
+
+Baseline conversion rate is equivalent to our control_rate in the code.
+Minimum detectable effect (MDE) is the smallest effect size (or lift) that we want our test to be able to detect. If the MDE is larger than our true lift, power will decrease because our sample size might not be large enough to detect the difference between the two groups.
