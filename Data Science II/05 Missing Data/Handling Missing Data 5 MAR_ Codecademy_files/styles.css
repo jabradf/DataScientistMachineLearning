@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background: #FFF0E5;
+}
+h3, p {
+    color: #10162F;
+}
+
+#arrowsSvg {
+    pointer-events: none;
+    width: 100%;
+    position: absolute;
+}
+
+.mi-blockRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mi-block {
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #424242;
+    margin: 16px;
+    cursor: pointer;
+    width: calc(25% - 32px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    opacity: .6;
+}
+
+
+.mi-block:hover {
+    opacity: .9;
+}
+
+.mi-selectedBlock {
+    border: 1px solid rgb(16, 22, 47);
+    opacity: 1;
+}
+
+.mi-standardBlock {
+    background-color: #66C4FF;
+}
+
+.mi-greenBlock {
+    background-color: #AEE938;
+}
+
+.mi-blockText {
+    width: 100%;
+    text-align: center;
+}
+
+.mi-blockText, .mi-descriptionsText {
+    font-family: Apercu, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 600 !important;
+}
+
+.mi-descriptionHeader {
+    font-weight: bold;
+}
+
+.mi-descriptionsContainer {
+    margin: 16px;
+    background-color: #F5FFE3;
+    padding: 16px;
+    border: 1px solid rgb(16, 22, 47);
+}
