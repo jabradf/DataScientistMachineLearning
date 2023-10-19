@@ -1,0 +1,24 @@
+m/f split:
+
+body type
+job
+offspring
+orientation
+essay language (natural language predictive component, data needs cleaning here for this!)
+
+
+income:
+job
+education
+offspring
+languages spoken
+
+predict age from: (unsupervised analysis)
+income
+job
+offspring
+lifestyle
+
+
+
+Correlations for location
