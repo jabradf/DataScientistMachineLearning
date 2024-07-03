@@ -1,7 +1,0 @@
-Accuracy = (TP + TN)/Total
- 
-Precision = TP/(TP + FP)
- 
-Recall = TP/(TP + FN)
- 
-F1 score = 2*((Precision*Recall)/(Precision+Recall))
