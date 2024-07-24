@@ -28,7 +28,7 @@ Bagging is a learning technique that is done in parallel. Each of the base model
 
 Once each of the base models is trained, the method for ensembling tends to be a simple aggregation technique over each of the models; a majority vote for classification problems and averaging for regression problems.
 
-A common implementation of a bagging algorithm that uses decision trees as their base model is the Random Forest. You can learn more about Bagging and Random Forests in the Random Forests module.
+A common implementation of a bagging algorithm that uses decision trees as their base model is the Random Forest. You can learn more about Bagging and Random Forests in the [Random Forests module.
 
 ## Boosting
 Boosting is an ensemble learning technique where the weak learners are too simple and tend to suffer from high bias. In the Boosting panel of the figure above, the base models are decision trees with only one level, a decision stump. Decision stumps can only make a decision based off of one feature at a time, causing them to underfit the data substantially.
